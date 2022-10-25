@@ -28,7 +28,7 @@ Options:
 An example use of the code would be:
 
 ```
-Rscript --vanilla dbGaP_ConcatenatoR.R -d dbGaP_Submissions/dbGaP_submission_1/ -i dbGaP_Submissions/dbGaP_submission_2/ -o dbGaP_Subimssions/merged_submissions
+Rscript --vanilla dbGaP_ConcatenatoR.R -d test/set_a -i test/set_b/ -o test/set_ab/
 ```
 
-The input from the two submission files would be ingested, concatenated and duplicates removed. The output would be placed in the newly created directory if "merged_submissions" did not previously exist.
+The input from the two submission files would be ingested, concatenated and duplicates removed. The output would be placed in the newly created directory if the directory, "set_ab", did not previously exist.
