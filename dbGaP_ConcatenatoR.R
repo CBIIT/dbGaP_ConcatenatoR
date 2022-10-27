@@ -76,7 +76,7 @@ path2=file_path_as_absolute(opt$directory_2)
 #Create directory if it does not exist.
 if (opt$output!="."){
   if (!(opt$output %in% list.dirs(dirname(opt$output), full.names = FALSE))){
-    dir.create(path = paste(dirname(opt$output),opt$output,sep="/"))
+    dir.create(path = paste(dirname(opt$output),basename(opt$output),sep="/"))
   }
 }
 
@@ -106,11 +106,11 @@ if (substr(x = outpath,start = nchar(outpath), stop = nchar(outpath))!="/"){
 }
 
   
-outfile=paste("_updated_",
+outfile=paste("_Concat",
               stri_replace_all_fixed(
                 str = Sys.Date(),
                 pattern = "-",
-                replacement = "_"),
+                replacement = ""),
               ".txt",
               sep="")
 
@@ -149,5 +149,4 @@ for (dbfile in dbgap_files){
   write_tsv(x = df, file = paste(outpath,dbfile,outfile,sep = ""),na = "")
 }
 
-
-cat(paste("The combined dbGap data submission can be found here: ", outpath,"\n\n",sep = ""))
+cat(paste("\n\nProcess Complete.\n\nThe output files can be found here: ",outpath,"\n\n",sep = "")) 
