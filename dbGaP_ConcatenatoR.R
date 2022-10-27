@@ -57,7 +57,7 @@ option_list = list(
 
 
 #create list of options and values for file input
-opt_parser = OptionParser(option_list=option_list, description = "\ndbGaP_ConcatenatoR.R version 1.0.0\n\nSubmit two directories that contain the dbGaP submission files for SA, SSM and, SC_DS.")
+opt_parser = OptionParser(option_list=option_list, description = "\ndbGaP_ConcatenatoR.R v2.0.0\n\nSubmit two directories that contain the dbGaP submission files for SA, SSM and, SC_DS.")
 opt = parse_args(opt_parser)
 
 #If no options are presented, return --help, stop and print the following message.
