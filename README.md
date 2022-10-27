@@ -7,7 +7,7 @@ Run the following command in a terminal where R is installed for help.
 Rscript --vanilla dbGaP_ConcatenatoR.R -h
 Usage: dbGaP_ConcatenatoR.R [options]
 
-dbGaP_ConcatenatoR.R version v2.0.0
+dbGaP_ConcatenatoR.R v2.0.0
 
 Submit two directories that contain the dbGaP submission files for SA, SSM and, SC_DS.
 
